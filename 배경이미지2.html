@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>abc</title>
+    <style>
+        body {
+            background-image: url(i/ima.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+        div {
+            width:400px;
+            height:250px;
+            padding: 20px;
+            border: 20px  solid rgba(204, 204, 204, 0.493);        
+            margin-bottom:20px;
+            overflow:auto;
+            background-image:url('i/ima.png');  /* 텍스트 상자의 배경 이미지 */
+            background-repeat:no-repeat;  /* 배경 이미지 반복 안 함 */      
+            background-position:right top;  /* 배경 이미지를 오른쪽 상단에 위치시킴 */
+        }
+        #bg1 {background-origin: padding-box;}
+        #bg2 {background-origin: border-box;}
+        #bg3 {background-origin: content-box;}
+    </style>
+</head>
+<body>
+    <div id="bg1">가나다라마바사</div>
+    <div id="bg2">가나다라마바사</div>
+    <div id="bg3">가나다라마바사</div>
+</body>
+</html>

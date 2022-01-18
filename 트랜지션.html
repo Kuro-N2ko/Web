@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>abc</title>
+    <style>
+        .box {
+            margin:20px auto;
+            width: 100px;
+            height: 100px;
+            background-color: #07f;
+            border: 1px solid #222;
+            transition-property: width, height;
+            transition-duration: 2s, 1s;
+        }
+        .box:hover{
+            width: 200px;
+            height: 120px;
+        }
+        .box2 {
+		margin:50px auto;
+		width: 100px;
+		height: 100px;
+		background-color: #fb5;
+		border: 1px solid #222;
+		transition: 2s ease-in; 
+	    }
+	    .box2:hover {  
+		width: 200px;
+		height: 200px;
+		background-color: #f50;
+		transform: rotate(270deg);			
+	    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>

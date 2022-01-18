@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>abc</title>
+    <style>
+        body {
+            background: #eee;
+        }
+        section {
+            width: 600px;
+            margin: 20px auto;
+        }
+        p {
+            width: 500px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+        section p { /* section 요소의 모든 하위 p 요소에 적용 */
+            color: blue;
+        }
+        section > p { /* section 요소의 자식 p 요소에 적용 */
+            color: red;
+        }
+        h2+p { /*h2의 형제인 p요소 중 첫번째 p*/
+            background-color: #222;
+            color: #fff;
+        }
+        h3~p {
+            background-color: skyblue;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>ABC</h1>
+        <p>abcde</p>
+        <h2>DEF</h2>
+        <p>abcde</p>
+        <p>fghij</p>
+        <h3>GHI</h3>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <div>
+            <p>123</p>
+            <p>456</p>
+        </div>
+    </section>
+</body>
+</html>
